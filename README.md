@@ -18,6 +18,11 @@ solfile = "sol-%07d.q" % iter
 [xi, eta, zeta, xjac] = metrics(x,y,z)
 # ...
 '''
+## Metrics
+Metrics are evaluated to when performing operations in uniform computational space (derivative operations)
+such that
+$$\frac{\partial}{\partial x} = \xi_x\frac{\partial}{\partial \xi}$$
+
 
 ## To do
 Grid interpolations, spectral analysis, grid convergence plotting routines, etc ...
