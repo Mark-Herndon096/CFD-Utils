@@ -21,6 +21,7 @@ solfile = "sol-%07d.q" % iter
 ## Metrics
 Metrics are evaluated to when performing operations in uniform computational space (derivative operations)
 such that
+
 $$\frac{\partial}{\partial x} = \xi_x\frac{\partial}{\partial \xi}$$
 
 
