@@ -7,7 +7,7 @@ Plot3D Utilities are a collection of Python and Matlab functions to deal with pr
 import plot3dUtils as p3d
 
 # Reads grid file
-[x,y,z,dims] = read_grid_file(grdfile)
+[dims,x,y,z] = read_grid_file(grdfile)
 
 # Reads solution file
 iter = 100 # Solution iteration of choice
