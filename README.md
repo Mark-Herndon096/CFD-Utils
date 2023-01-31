@@ -18,19 +18,25 @@ solfile = "sol-%07d.q" % iter
 [xi, eta, zeta, xjac] = metrics(x,y,z)
 # ...
 ```
+metrics of the transformation are defined as
+
 $$
    \begin{align\*}
-    \frac{\xi_x}{J}   &=& y_\eta  z_\zeta - z_\eta  y_\zeta \\
-    \frac{\xi_y}{J}   &=& z_\eta  x_\zeta - x_\eta  z_\zeta \\
-    \frac{\xi_z}{J}   &=& x_\eta  y_\zeta - y_\eta  x_\zeta \\
-    \frac{\eta_x}{J}  &=& y_\zeta z_\xi   - z_\zeta y_\xi   \\
-    \frac{\eta_y}{J}  &=& z_\zeta x_\xi   - x_\zeta z_\xi   \\
-    \frac{\eta_z}{J}  &=& x_\zeta y_\xi   - y_\zeta x_\xi   \\
-    \frac{\zeta_x}{J} &=& y_\xi   z_\eta  - z_\xi   y_\eta  \\
-    \frac{\zeta_y}{J} &=& z_\xi   x_\eta  - x_\xi   z_\eta  \\
-    \frac{\zeta_z}{J} &=& x_\xi   y_\eta  - y_\xi   x_\eta  \\
+    \xi_x/J   &=& y_\eta  z_\zeta - z_\eta  y_\zeta \\
+    \xi_y/J   &=& z_\eta  x_\zeta - x_\eta  z_\zeta \\
+    \xi_z/J   &=& x_\eta  y_\zeta - y_\eta  x_\zeta \\
+    \eta_x/J  &=& y_\zeta z_\xi   - z_\zeta y_\xi   \\
+    \eta_y/J  &=& z_\zeta x_\xi   - x_\zeta z_\xi   \\
+    \eta_z/J  &=& x_\zeta y_\xi   - y_\zeta x_\xi   \\
+    \zeta_x/J &=& y_\xi   z_\eta  - z_\xi   y_\eta  \\
+    \zeta_y/J &=& z_\xi   x_\eta  - x_\xi   z_\eta  \\
+    \zeta_z/J &=& x_\xi   y_\eta  - y_\xi   x_\eta  \\
    \end{align*}
 $$
+
+where the inverse jacobian $J^{-1}$ is
+
+
 
 ## To do
 Grid interpolations, spectral analysis, grid convergence plotting routines, etc ...
