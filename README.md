@@ -54,6 +54,16 @@ $$
    \end{align\*}
 $$
 
-which allow for analysis on general curvilinear grids or unequally spaced cartesian grids for finite-difference applications. 
+which allow for analysis on general curvilinear grids or unequally spaced cartesian grids for finite-difference applications. As an example, the cartesian component of vorticity in the $z$-direction can be computed as
+
+$$
+   \begin{align\*}
+   \omega_z &=\left(\frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}\right) \\
+   \\
+            &=\left(\xi_y\frac{\partial v}{\partial \xi} + \eta_y\frac{\partial v}{\partial \eta} + \zeta_y\frac{\partial v}{\partial \zeta}\right) -\left(\xi_x\frac{\partial u}{\partial \xi} + \eta_x\frac{\partial u}{\partial \eta} + \zeta_x\frac{\partial u}{\partial \zeta}\right)
+   \end{align\*}
+$$
+
+
 ## To do
 Grid interpolations, spectral analysis, grid convergence plotting routines, etc ...
