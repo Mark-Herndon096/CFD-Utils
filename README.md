@@ -19,7 +19,17 @@ solfile = "sol-%07d.q" % iter
 # ...
 ```
 $$
-\frac{\partial}{\partial x}
+   \begin{align\*}
+    \frac{\xi_x}{J}   &=& y_\eta  z_\zeta - z_\eta  y_\zeta \\
+    \frac{\xi_y}{J}   &=& z_\eta  x_\zeta - x_\eta  z_\zeta \\
+    \frac{\xi_z}{J}   &=& x_\eta  y_\zeta - y_\eta  x_\zeta \\
+    \frac{\eta_x}{J}  &=& y_\zeta z_\xi   - z_\zeta y_\xi   \\
+    \frac{\eta_y}{J}  &=& z_\zeta x_\xi   - x_\zeta z_\xi   \\
+    \frac{\eta_z}{J}  &=& x_\zeta y_\xi   - y_\zeta x_\xi   \\
+    \frac{\zeta_x}{J} &=& y_\xi   z_\eta  - z_\xi   y_\eta  \\
+    \frac{\zeta_y}{J} &=& z_\xi   x_\eta  - x_\xi   z_\eta  \\
+    \frac{\zeta_z}{J} &=& x_\xi   y_\eta  - y_\xi   x_\eta  \\
+   \end{align*}
 $$
 
 ## To do
