@@ -18,7 +18,8 @@ solfile = "sol-%07d.q" % iter
 [xi, eta, zeta, xjac] = metrics(x,y,z)
 # ...
 ```
-metrics of the coordinate transformation are defined
+## Mathematics
+Metrics of the coordinate transformation $(x,y,z) \rightarrow (\xi,\eta,\zeta)$ are defined
 
 $$
    \begin{align\*}
@@ -34,10 +35,23 @@ $$
    \end{align*}
 $$
 
-where the jacobian of the transformation $J=1/J^{-1}$ is defined by
+where the inverse jacobian of the transformation $J^{-1}=1/J$ 
 
 $$
 J^{-1} = x_{\xi}\\,\xi_x + y_{\xi}\\,\xi_y + z_{\xi}\\,\xi_z
+$$
+
+Derivatives with respect to spatial (cartesian) directions may now be expressed as
+
+$$
+   \begin{align\*}
+      \frac{\partial}{\partial x} &= \xi_x\frac{\partial}{\partial \xi} + \eta_x\frac{\partial}{\partial \eta} + \zeta_x\frac{\partial}{\partial \zeta} \\
+      \\
+          \frac{\partial}{\partial y} &= \xi_y\frac{\partial}{\partial \xi} + \eta_y\frac{\partial}{\partial \eta} + \zeta_y\frac{\partial}{\partial \zeta} \\
+      \\
+          \frac{\partial}{\partial z} &= \xi_z\frac{\partial}{\partial \xi} + \eta_z\frac{\partial}{\partial \eta} + \zeta_z\frac{\partial}{\partial \zeta} \\
+      \\
+   \end{align\*}
 $$
 
 ## To do
