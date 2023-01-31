@@ -22,9 +22,7 @@ solfile = "sol-%07d.q" % iter
 Metrics are evaluated to when performing operations in uniform computational space (derivative operations)
 such that
 
-```math
-\frac{\partial}{\partial x} = \xi_x\frac{\partial}{\partial \xi}
-'''
+$$\frac{\partial}{\partial x} = \xi_x\frac{\partial}{\partial \xi}$$
 
 
 ## To do
