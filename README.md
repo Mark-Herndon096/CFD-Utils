@@ -17,7 +17,10 @@ solfile = "sol-%07d.q" % iter
 # Compute metrics
 [xi, eta, zeta, xjac] = metrics(x,y,z)
 # ...
-'''
+```
+$$
+\frac{\partial}{\partial x}
+$$
 
 ## To do
 Grid interpolations, spectral analysis, grid convergence plotting routines, etc ...
